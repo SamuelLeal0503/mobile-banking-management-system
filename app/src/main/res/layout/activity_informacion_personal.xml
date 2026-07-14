@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INFORMACION PERSONAL"
+        android:padding="20dp"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/usernameIP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Nombre"
+        android:minHeight="48dp"
+        tools:ignore="Autofill,HardcodedText,TextFields,VisualLintTextFieldSize" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salario:"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/salarioIP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Salario"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        tools:ignore="Autofill,HardcodedText,VisualLintTextFieldSize" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Telefono:"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/telefonoIP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Teléfono"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        tools:ignore="Autofill,HardcodedText,VisualLintTextFieldSize" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha de Nacimiento:"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/nacimientoIP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Fecha de Nacimiento"
+        android:inputType="date"
+        android:minHeight="48dp"
+        tools:ignore="Autofill,HardcodedText,VisualLintTextFieldSize" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dirección:"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/direccionIP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Dirección"
+        android:inputType="textPostalAddress"
+        android:minHeight="48dp"
+        tools:ignore="Autofill,HardcodedText,VisualLintTextFieldSize" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estado Civil:"
+        tools:ignore="HardcodedText" />
+
+    <Spinner
+        android:id="@+id/spinnerIP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:entries="@array/estado_civil_array"
+        android:minHeight="48dp"
+        android:prompt="@string/estado_civil_prompt" />
+
+    <Button
+        android:id="@+id/btnIP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/soldelLogo"
+        android:padding="15dp"
+        android:text="Guardar cambios"
+        tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
+
+</LinearLayout>

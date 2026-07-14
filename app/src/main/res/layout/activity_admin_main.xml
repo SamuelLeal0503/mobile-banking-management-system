@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="23dp">
+
+    <TextView
+        android:id="@+id/title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="33dp"
+        android:text="@string/pantalla_administrativa"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:gravity="center" />
+
+
+    <Button
+        android:id="@+id/add_client_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_textview"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/soldelLogo"
+        android:padding="15dp"
+        android:text="@string/agregar_un_cliente"
+        tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/assign_loan_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_client_button"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/soldelLogo"
+        android:padding="15dp"
+        android:text="@string/asignar_un_pr_stamo"
+        tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/assign_loan_button"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/soldelLogo"
+        android:padding="15dp"
+        android:text="@string/cerrar_sesi_n"
+        tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnPrestamos"
+        android:layout_width="256dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="160dp"
+        android:backgroundTint="@color/soldelLogo"
+        android:text="@string/ver_mis_prestamos"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnCuota"
+        android:layout_width="256dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="264dp"
+        android:backgroundTint="@color/soldelLogo"
+        android:text="@string/calculo_cuota"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnInfo"
+        android:layout_width="256dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="460dp"
+        android:backgroundTint="@color/soldelLogo"
+        android:text="@string/informacion_personal"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnAhorros"
+        android:layout_width="256dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="360dp"
+        android:backgroundTint="@color/soldelLogo"
+        android:text="@string/gestonar_mis_ahorros"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="229dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/bienvenido"
+        android:textAlignment="center"
+        android:textColor="#015c56"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/txtMainNombre"
+        android:layout_width="350dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="92dp"
+        android:fontFamily="sans-serif-light"
+        android:textAlignment="center"
+        android:textColor="#015c56"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="255dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="93dp"
+        android:text="@string/cerrar_sesion"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="357dp"
+        android:layout_height="272dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="228dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/asignar_credito"
+            android:textAlignment="center"
+            android:textColor="#015c56"
+            android:textSize="34sp"
+            tools:ignore="TextSizeCheck"
+            tools:layout_editor_absoluteX="216dp"
+            tools:layout_editor_absoluteY="320dp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:fontFamily="monospace"
+            android:text="@string/ingrese_la_cedula_del_cliente"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:ignore="TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/txtCedulaCliente"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/cedulaAsignarCredito"
+            android:inputType="text"
+            android:gravity="center"
+            tools:ignore="MissingConstraints,TextFields" />
+
+        <Button
+            android:id="@+id/btnAsignar"
+            android:layout_width="120dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:backgroundTint="@color/soldelLogo"
+            android:text="@string/asignar"
+            android:textAlignment="center"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

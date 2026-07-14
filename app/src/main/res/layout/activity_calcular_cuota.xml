@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.CalcularCuotaActivity"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cuotaCaclcular"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/monto_prestamo_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="28dp"
+        android:hint="@string/prestamoMonto"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        tools:ignore="Autofill,VisualLintTextFieldSize" />
+
+    <TextView
+        android:id="@+id/tipo_credito_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tipo_de_crédito"
+        android:layout_below="@id/monto_prestamo_edit_text"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/tipo_credito_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tipo_credito_text_view"
+        android:entries="@array/tipo_credito_array"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/plazo_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plazoMeses"
+        android:layout_below="@id/tipo_credito_spinner"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/plazo_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plazo_text_view"
+        android:entries="@array/plazo_array"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/calcular_cuota_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plazo_spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/soldelLogo"
+        android:text="@string/CalcularCuotaMensual"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/cuota_mensual_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cuota_mensual"
+        android:layout_below="@id/calcular_cuota_button"
+        android:layout_marginTop="32dp"/>
+
+</RelativeLayout>

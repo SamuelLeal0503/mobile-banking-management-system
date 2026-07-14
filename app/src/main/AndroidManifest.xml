@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Proyectomoviles"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:label="Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.PantallaPrincipalAdminActivity"
+            android:label="Pantalla Principal Admin"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".Activities.MainScreenClienteActivity"
+            android:label="Pantalla Principal Cliente"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".Activities.misPrestamosActivity"
+            android:label="Asignar Prestamo"
+            android:parentActivityName=".Activities.MainScreenClienteActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.MainScreenClienteActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.prestamoPagadoActivity"
+            android:label="Asignar Prestamo"
+            android:parentActivityName=".Activities.misPrestamosActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.misPrestamosActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.AgregarClienteActivity"
+            android:label="Agregar Cliente"
+            android:parentActivityName=".Activities.PantallaPrincipalAdminActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.PantallaPrincipalAdminActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.prestamoClienteActivity"
+            android:label="Asignar Prestamo"
+            android:parentActivityName=".Activities.PantallaPrincipalAdminActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.PantallaPrincipalAdminActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.AsignarPrestamoActivity"
+            android:label="Asignar Prestamo"
+            android:parentActivityName=".Activities.prestamoClienteActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.prestamoClienteActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.PersonalClienteActivity"
+            android:label="Personal Cliente"
+            android:parentActivityName=".Activities.MainScreenClienteActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.MainScreenClienteActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.GestionarAhorrosActivity"
+            android:label="Gestionar Ahorros Cliente"
+            android:parentActivityName=".Activities.MainScreenClienteActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.MainScreenClienteActivity" />
+        </activity>
+
+        <activity
+            android:name=".Activities.CalcularCuotaActivity"
+            android:label="Gestionar Ahorros Cliente"
+            android:parentActivityName=".Activities.MainScreenClienteActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.MainScreenClienteActivity" />
+        </activity>
+
+
+
+    </application>
+
+</manifest>

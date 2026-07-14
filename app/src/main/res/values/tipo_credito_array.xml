@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="tipo_credito_array">
+        <item>Hipotecario</item>
+        <item>Educación</item>
+        <item>Personal</item>
+        <item>Viajes</item>
+    </array>
+</resources>

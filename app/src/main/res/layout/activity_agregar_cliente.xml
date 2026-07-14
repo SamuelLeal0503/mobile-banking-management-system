@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/title_add_client"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_cedula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:hint="@string/hint_id"
+        android:inputType="text"
+        tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/et_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:hint="@string/hint_name"
+        android:inputType="text"
+        tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/et_contrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/ingresar_contrasena"
+        android:inputType="textPassword"
+        tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/et_salario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="@string/hint_salary"
+        android:inputType="numberDecimal"
+        tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/et_telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="@string/hint_phone"
+        android:inputType="phone"
+        tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/et_fecha_nacimiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:hint="@string/hint_birthdate"
+        android:inputType="date"
+        tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/et_direccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:hint="@string/hint_address"
+        android:inputType="text"
+        tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+    <Spinner
+        android:id="@+id/sp_estado_civil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:entries="@array/estado_civil_array"
+        android:prompt="@string/prompt_marital_status"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btn_add_client"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/soldelLogo"
+        android:text="@string/button_add"
+        tools:ignore="TextContrastCheck" />
+
+</LinearLayout>

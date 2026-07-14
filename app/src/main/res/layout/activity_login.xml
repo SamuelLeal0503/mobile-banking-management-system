@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#015c56"
+    android:padding="30dp">
+
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="219dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="70dp"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/todo" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_view"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="24dp"
+        android:backgroundTint="@color/textoDelLogo"
+        android:hint="@string/nombre_de_usuario"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:shadowColor="#f1c9a0"
+        android:textColor="@color/textoDelLogo"
+        android:textColorHint="#f1c9a0"
+        android:textColorLink="#f1c9a0"
+        tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize"
+        android:autofillHints="" />
+
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_username"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="24dp"
+        android:autofillHints=""
+        android:backgroundTint="@color/textoDelLogo"
+        android:hint="@string/contrase_a"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:shadowColor="#f1c9a0"
+        android:textColor="@color/textoDelLogo"
+        android:textColorHint="#f1c9a0"
+        android:textColorLink="#f1c9a0"
+        tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_password"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp">
+        <RadioButton
+            android:id="@+id/radio_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/admin"
+            android:textColor="@color/textoDelLogo"
+            android:buttonTint="@color/textoDelLogo"/>
+
+        <RadioButton
+            android:id="@+id/radio_cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:text="@string/cliente"
+            android:textColor="@color/textoDelLogo"
+            android:buttonTint="@color/textoDelLogo"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_group"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="24dp"
+        android:backgroundTint="@color/soldelLogo"
+        android:text="@string/ingresar"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="24dp"
+        android:backgroundTint="@color/soldelLogo"
+        android:text="@string/salir"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+
+</RelativeLayout>
+
